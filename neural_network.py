@@ -29,15 +29,15 @@ class NeuralNetwork(object):
             return 1 - (value * value)
         return np.tanh(value)
 
-    def __init__(self, *arch, **kwargs):
-        self.n_of_synapses = len(arch) - 1
+    def __init__(self, *layout, **kwargs):
+        self.n_of_synapses = len(layout) - 1
         # Make weights and biases
         np.random.seed(kwargs["seed"] if "seed" in kwargs else 1)
         self.weights = {}
         self.biases = {}
         for i in range(self.n_of_synapses):
-            self.weights[i] = 2 * np.random.random((arch[i], arch[i+1])) - 1
-            self.biases[i] = np.zeros(arch[i+1])
+            self.weights[i] = 2 * np.random.random((layout[i], layout[i+1])) - 1
+            self.biases[i] = np.zeros(layout[i+1])
         # Remember activation functions
         if "activations" in kwargs:
             self.activations = [{
