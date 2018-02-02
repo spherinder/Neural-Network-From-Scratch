@@ -15,7 +15,7 @@ nn.train(X, Y, 1000)
 pred = nn.predict(X)
 print(pred)
 ```
-We import the module and define the input data and the training data:
+We import the module and define the input data and its corresponding labels:
 ```
 from neural_network import NeuralNetwork
 
