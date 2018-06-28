@@ -30,7 +30,7 @@ nn = NeuralNetwork([2, 10, 10, 1])
 ```
 Then we train the network on the data 1000 times with a learning rate:
 ```
-nn.train(X, Y, 1000)
+nn.train(X, Y, 1000, 0.01)
 ```
 After we've trained our model, we can use it to predict our input data and see how good it is:
 ```
