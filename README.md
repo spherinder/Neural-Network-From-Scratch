@@ -1,5 +1,5 @@
 # Neural-Network-From-Scratch
-This is a neural network module that can learn training data using momentum as optimization. It has a lot of functionalities; one can for example define the width and hight of the network, add dropout to layers, and customize the activation function in each layer.
+This is a neural network module that can learn training data using nesterov momentum as optimization. It has a lot of functionalities; one can for example define the width and hight of the network, add dropout to layers, and customize the activation function in each layer.
 
 ### Usage
 Using the module's basic functionality, solving the XOR problem is as simple as this:
