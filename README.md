@@ -44,4 +44,4 @@ When it's done we print out its predictions:
  [ 0.93204751]
  [ 0.08222075]]
 ```
-Quite close to the solution without any hyperparameter-tuning, isn't it?
+Quite close to the solution, isn't it?
